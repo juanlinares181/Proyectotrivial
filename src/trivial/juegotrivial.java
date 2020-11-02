@@ -145,6 +145,35 @@ public class juegotrivial {
 		default:
 			System.out.println("La opción introducida no es válida, eliga entre 1 y 4. ");
 		}
+		Scanner sc5 = new Scanner(System.in);
+		System.out.println("La nomenclatura del Mercedes-Benz Clase C (1993-1997). " + "\n1- W124. " + "\n2- W221. "
+				+ "\n3- W210. " + "\n4- W202. ");
+		num = sc5.nextInt();
+		switch (num) {
+		case 1:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 2:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 3:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 4:
+			System.out.println("La respuesta es correcta :)");
+			total += puntos;
+			acierto++;
+			break;
+		default:
+			System.out.println("La opción introducida no es válida, eliga entre 1 y 4. ");
+		}
+
 	}
 
 }
