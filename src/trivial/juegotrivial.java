@@ -235,6 +235,34 @@ public class juegotrivial {
 		default:
 			System.out.println("La opción introducida no es válida, eliga entre 1 y 4. ");
 		}
+		Scanner sc8 = new Scanner(System.in);
+		System.out.println("Pregunta Nº 8 - El primer modelo de Toyota en ser híbrido es... " + "\n1- Toyota Supra. "
+				+ "\n2- Toyota Sephia. " + "\n3- Toyota Prius. " + "\n4- Toyota Starlet. ");
+		num = sc8.nextInt();
+		switch (num) {
+		case 1:
+			System.out.println("La respuesta es correcta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 2:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 3:
+			System.out.println("La respuesta es incorrecta :)");
+			total += puntos;
+			acierto++;
+			break;
+		case 4:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		default:
+			System.out.println("La opción introducida no es válida, eliga entre 1 y 4. ");
+		}
 	}
 
 }
