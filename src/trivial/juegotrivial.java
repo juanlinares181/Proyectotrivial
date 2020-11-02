@@ -241,7 +241,7 @@ public class juegotrivial {
 		num = sc8.nextInt();
 		switch (num) {
 		case 1:
-			System.out.println("La respuesta es correcta :(");
+			System.out.println("La respuesta es incorrecta :(");
 			total -= puntos;
 			fallo++;
 			break;
@@ -251,7 +251,7 @@ public class juegotrivial {
 			fallo++;
 			break;
 		case 3:
-			System.out.println("La respuesta es incorrecta :)");
+			System.out.println("La respuesta es correcta :)");
 			total += puntos;
 			acierto++;
 			break;
@@ -259,6 +259,36 @@ public class juegotrivial {
 			System.out.println("La respuesta es incorrecta :(");
 			total -= puntos;
 			fallo++;
+			break;
+		default:
+			System.out.println("La opción introducida no es válida, eliga entre 1 y 4. ");
+		}
+		Scanner sc9 = new Scanner(System.in);
+		System.out.println(
+				"Pregunta Nº 9 - De los siguientes automóviles, cuál no pertenece al grupo GM (General Motors). "
+						+ "\n1- Buick Skyhawk. " + "\n2- Oldsmobile Delta 88. " + "\n3- Chevrolet Monte Carlo. "
+						+ "\n4- Mercury Cougar XR-7. ");
+		num = sc9.nextInt();
+		switch (num) {
+		case 1:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 2:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 3:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 4:
+			System.out.println("La respuesta es incorrecta :)");
+			total += puntos;
+			acierto++;
 			break;
 		default:
 			System.out.println("La opción introducida no es válida, eliga entre 1 y 4. ");
