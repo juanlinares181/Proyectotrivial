@@ -82,10 +82,8 @@ public class juegotrivial {
 		}
 
 		Scanner sc3 = new Scanner(System.in);
-		System.out
-				.println("Pregunta Nº 3 - La velocidad máxima que alcanzo el Bugatti Veyron de 2005 (en KmH). "
-						+ "\n1- 407 KmH. " + "\n2- 387 KmH. "
-						+ "\n3- 500 KmH. " + "\n4- 391. ");
+		System.out.println("Pregunta Nº 3 - La velocidad máxima que alcanzo el Bugatti Veyron de 2005 (en KmH). "
+				+ "\n1- 407 KmH. " + "\n2- 387 KmH. " + "\n3- 500 KmH. " + "\n4- 391 KmH. ");
 		num = sc3.nextInt();
 		switch (num) {
 		case 1:
@@ -105,6 +103,42 @@ public class juegotrivial {
 			break;
 		case 4:
 			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		default:
+			System.out.println("La opción introducida no es válida, eliga entre 1 y 4. ");
+		}
+		Scanner sc4 = new Scanner(System.in);
+		System.out.println(
+				"Pregunta Nº 4 - De estas cuatro listas, cuales fueron los modelos con configuracción de motor rotativo (WANKEL)."
+						+ "\n1- \n -Ford Mustang FastBack 289. \n -Mercedes-Benz 280e W114. \n -Lotus Excel Coupe. \n D-aihatsu Feroza. \n -Chevrolet Silverado 2500. "
+
+						+ "\n2- \n -Mazda Luce R130. \n -Citroën GS Bimotor. \n -NSU Ro80. \n -Chevrolet Aerovette Concept. \n -Audi A1 E-tron."
+
+						+ "\n3- \n -Mercury Grand Marquis. \n -Riley RM Saloon. \n -Renault Avanttime. \n -Maserati Ghibli Spyder. \n -BMW 3200 Coupe. "
+
+						+ "\n4- \n -Nissan Sunny Coupe. \n -Peugeot 405 Gti. \n -Datsun Bluebird 710. \n -Lamborghini Silhouette. \n -Buick Limited. ");
+
+		num = sc4.nextInt();
+		switch (num) {
+		case 1:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 2:
+			System.out.println("La respuesta es correcta :)");
+			total += puntos;
+			acierto++;
+			break;
+		case 3:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 4:
+			System.out.println("La respuesta es correcta :)");
 			total -= puntos;
 			fallo++;
 			break;
