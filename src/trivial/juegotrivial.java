@@ -15,7 +15,7 @@ public class juegotrivial {
 				+ "    88       88          88    `8b,d8'    88  88,    ,88  88  \r\n"
 				+ "    88       88          88      \"8\"      88  `\"8bbdP\"Y8  88 ");
 
-		int acierto = 0, fallo = 0, puntos = 10, num, total = 0;
+		int acierto = 0, fallo = 0, puntos = 0, num, total = 0;
 
 		Scanner sc1 = new Scanner(System.in);
 
@@ -296,7 +296,7 @@ public class juegotrivial {
 		Scanner sc10 = new Scanner(System.in);
 		System.out.println(
 				"Pregunta Nº 10 - ¿Que timepo estableció el Porsche 917K de Le Mans, en el Circuit de la Sarthe en 1971?, considerada la vuelta más rápida de la historia. "
-						+ "\n1-  3:37,1. " + "\n2- 4:42,1. " + "\n3- 4:66,7. " + "\n4- 3:03,9. ");
+						+ "\n1- 3:37,1. " + "\n2- 4:42,1. " + "\n3- 4:66,7. " + "\n4- 3:03,9. ");
 		num = sc10.nextInt();
 		switch (num) {
 		case 1:
@@ -322,6 +322,11 @@ public class juegotrivial {
 		default:
 			System.out.println("La opción introducida no es válida, eliga entre 1 y 4. ");
 		}
+		int suma = 0;
+		suma = (puntos + acierto);
+
+		System.out.println("Enhorabuena, has conseguido " + suma + " puntos");
+
 	}
 
 }
