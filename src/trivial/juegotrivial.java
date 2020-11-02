@@ -20,6 +20,7 @@ public class juegotrivial {
 		Scanner sc1 = new Scanner(System.in);
 
 		System.out.println("Tema: Vehículos ");
+		
 		System.out.println("Pregunta Nº 1 - ¿Cómo se llamaba originalmente la marca Subaru? "
 				+ "\n1- Osaka Heavy Industries. " + "\n2- Motegi Heavy Industries. " + "\n3- Fuji Heavy Industries. "
 				+ "\n4- Huyioara Heavy Industries. ");
@@ -146,8 +147,8 @@ public class juegotrivial {
 			System.out.println("La opción introducida no es válida, eliga entre 1 y 4. ");
 		}
 		Scanner sc5 = new Scanner(System.in);
-		System.out.println("La nomenclatura del Mercedes-Benz Clase C (1993-1997). " + "\n1- W124. " + "\n2- W221. "
-				+ "\n3- W210. " + "\n4- W202. ");
+		System.out.println("Pregunta Nº 5 - La nomenclatura del Mercedes-Benz Clase C (1993-1997). " + "\n1- W124. "
+				+ "\n2- W221. " + "\n3- W210. " + "\n4- W202. ");
 		num = sc5.nextInt();
 		switch (num) {
 		case 1:
@@ -173,7 +174,38 @@ public class juegotrivial {
 		default:
 			System.out.println("La opción introducida no es válida, eliga entre 1 y 4. ");
 		}
-
+		Scanner sc6 = new Scanner(System.in);
+		System.out.println("Pregunta Nº 6 - ¿Cúal ha sido la amyor rivalidad entre coches de tipo Muscle/Pony Cars?. "
+				+ "\n1 \n -Mercedes-Benz Clase S \n -BMW Serie 7 \n -Audi A8. "
+				+ "\n2 \n -Ford Mustang \n -Chevrolet Camaro \n -Dodge Challenger."
+				+ "\n3 \n -Rolls Royce Phantom \n -Bentley Continental \n -Jaguar XJ12. "
+				+ "\n4 \n -Lamborghini Miura \n -Ferrari 275 GTB \n -Ford GT40. ");
+		num = sc6.nextInt();
+		switch (num) {
+		case 1:
+			System.out.println("La respuesta es correcta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 2:
+			System.out.println("La respuesta es correcta :)");
+			total += puntos;
+			acierto++;
+			break;
+		case 3:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 4:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		default:
+			System.out.println("La opción introducida no es válida, eliga entre 1 y 4. ");
+		}
+		
 	}
 
 }
