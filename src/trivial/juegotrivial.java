@@ -20,7 +20,7 @@ public class juegotrivial {
 		Scanner sc1 = new Scanner(System.in);
 
 		System.out.println("Tema: Vehículos ");
-		
+
 		System.out.println("Pregunta Nº 1 - ¿Cómo se llamaba originalmente la marca Subaru? "
 				+ "\n1- Osaka Heavy Industries. " + "\n2- Motegi Heavy Industries. " + "\n3- Fuji Heavy Industries. "
 				+ "\n4- Huyioara Heavy Industries. ");
@@ -112,8 +112,8 @@ public class juegotrivial {
 		}
 		Scanner sc4 = new Scanner(System.in);
 		System.out.println(
-				"Pregunta Nº 4 - De estas cuatro listas, cuales fueron los modelos con configuracción de motor rotativo (WANKEL)."
-						+ "\n1- \n -Ford Mustang FastBack 289. \n -Mercedes-Benz 280e W114. \n -Lotus Excel Coupe. \n D-aihatsu Feroza. \n -Chevrolet Silverado 2500. "
+				"Pregunta Nº 4 - De estas cuatro listas, cuales fueron los modelos con configuración de motor rotativo (WANKEL)."
+						+ "\n1- \n -Ford Mustang FastBack 289. \n -Mercedes-Benz 280e W114. \n -Lotus Excel Coupe. \n -Daihatsu Feroza. \n -Chevrolet Silverado 2500. "
 
 						+ "\n2- \n -Mazda Luce R130. \n -Citroën GS Bimotor. \n -NSU Ro80. \n -Chevrolet Aerovette Concept. \n -Audi A1 E-tron."
 
@@ -205,7 +205,36 @@ public class juegotrivial {
 		default:
 			System.out.println("La opción introducida no es válida, eliga entre 1 y 4. ");
 		}
-		
+		Scanner sc7 = new Scanner(System.in);
+		System.out.println(
+				"Pregunta Nº 7 - Cada uno de estos coches es el más emblemático de diferente época, ¿Cúal es el más emblemático de la decada de 1980s?. "
+						+ "\n1- Ferrari F40. " + "\n2- Shelby Cobra SC 427. " + "\n3- Porsche 911 Turbo. "
+						+ "\n4- Lamborghini Diablo. ");
+		num = sc7.nextInt();
+		switch (num) {
+		case 1:
+			System.out.println("La respuesta es correcta :)");
+			total += puntos;
+			acierto++;
+			break;
+		case 2:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 3:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 4:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		default:
+			System.out.println("La opción introducida no es válida, eliga entre 1 y 4. ");
+		}
 	}
 
 }
