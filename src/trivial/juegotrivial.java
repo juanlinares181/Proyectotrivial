@@ -293,6 +293,35 @@ public class juegotrivial {
 		default:
 			System.out.println("La opción introducida no es válida, eliga entre 1 y 4. ");
 		}
+		Scanner sc10 = new Scanner(System.in);
+		System.out.println(
+				"Pregunta Nº 10 - ¿Que timepo estableció el Porsche 917K de Le Mans, en el Circuit de la Sarthe en 1971?, considerada la vuelta más rápida de la historia. "
+						+ "\n1-  3:37,1. " + "\n2- 4:42,1. " + "\n3- 4:66,7. " + "\n4- 3:03,9. ");
+		num = sc10.nextInt();
+		switch (num) {
+		case 1:
+			System.out.println("La respuesta es correcta :)");
+			total += puntos;
+			acierto++;
+			break;
+		case 2:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 3:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		case 4:
+			System.out.println("La respuesta es incorrecta :(");
+			total -= puntos;
+			fallo++;
+			break;
+		default:
+			System.out.println("La opción introducida no es válida, eliga entre 1 y 4. ");
+		}
 	}
 
 }
