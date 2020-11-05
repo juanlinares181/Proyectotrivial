@@ -1,4 +1,11 @@
 Proyecto Juego Trivial
+- Temáticas: 
+	- Vehículos (Amarillo, inventado por mi).
+	- Historia (Naranja).
+	- Geografía (Azul).
+	- Ciencias (Verde).
+	- Artes y Lenguaje (Rojo).
+	- Ocio y Entretenimiento (Rosa).
 
 - Instrucciones:
 	El Trivial comenzará con un muy currado cartel de bienvenida:)
@@ -11,3 +18,5 @@ Proyecto Juego Trivial
 	el resultado de puntos obtenidos por cada pregunta correcta.
 
 	Se basa en un punto por pregunta, por tanto si responde todas correctamente se consigue 10 puntos. 
+- Autor:	
+	Juan Linares Gallardo
